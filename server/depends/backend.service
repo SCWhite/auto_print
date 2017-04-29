@@ -1,0 +1,19 @@
+[Unit]
+Description=nodejs_backend
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /srv/http/backend/server.js
+WorkingDirectory=/srv/http/backend/
+
+User=http
+Group=http
+Environment=NODE_ENV=production
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs_backend
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

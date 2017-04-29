@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "connect-redis": "latest",
+    "cron": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "hogan-express": "latest",
+    "lodash": "latest",
+    "maxmind": "latest",
+    "multer": "latest",
+    "otpauth": "latest",
+    "redis": "latest"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
